@@ -10,20 +10,18 @@ package com.hanhan.test;
 import java.awt.List;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
-import java.io.UnsupportedEncodingException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 /**
  *
- * @author Administrator
+ * @author hanhan
+ * 注意该文件必须使用GBK,使用GB2312都没用
  */
 public class JiaoDianEvent01 extends JFrame implements FocusListener {
 
-    List info = new List(10);
+    List info = new List(10,true);
     JTextField tf = new JTextField("");
     JButton button = new JButton("确认");
 
@@ -40,7 +38,6 @@ public class JiaoDianEvent01 extends JFrame implements FocusListener {
         if (e.isTemporary()) {
            
                 info.add("暂时性获得--zanShiXingHuoDe");
-          
         } else {
         
                 info.add("长久性获得--zanShiXingHuoDe");
