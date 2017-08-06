@@ -45,7 +45,7 @@ public class JiaoDianEvent01 extends JFrame implements FocusListener {
         
                 info.add("长久性获得--zanShiXingHuoDe");
        
-        }
+        }   
     }
 
     @Override
