@@ -17,14 +17,14 @@ public class VectorFangShiChuanJianLieBiaoKuanng {
 		Container contentPane = f.getContentPane();
 		contentPane.setLayout(new GridLayout(1,3));
 		String []s={"美国","日本","加拿大","新西兰","斐济","澳大利亚","大不列颠","爱尔兰","乌克兰"};
-		Vector v=new Vector();
+		Vector<String> v=new Vector<String>();
 		v.addElement("Nokia 3310");
 		v.addElement("Nokia 8850");
 		v.addElement("Nokia 8260");
 		v.addElement("motorola v8088");
 		v.addElement("NEC DB2100");
-		JList l1=new JList(s);
-		JList l2=new JList(v);
+		JList<Object> l1=new JList<Object>(s);
+		JList<Object> l2=new JList<Object>(v);
 		l1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		l2.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 		l1.setBorder(BorderFactory.createTitledBorder("你最喜欢那个国家"));
